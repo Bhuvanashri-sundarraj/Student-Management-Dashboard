@@ -1,0 +1,126 @@
+/* style.css */
+
+/* Global body settings */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(120deg, #e0f7fa, #ffffff); /* Subtle gradient */
+    color: #343a40;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Headers & Brand text */
+h1, h2, .brand-text {
+    font-weight: 700;
+    color: #343a40;
+}
+
+.brand-text {
+    color: #0d6efd;
+    letter-spacing: 0.5px;
+}
+
+/* Login page */
+.bg-gradient {
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb); /* more lively gradient */
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-card {
+    background: #ffffff;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.login-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Form inputs */
+input, select {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.2);
+}
+
+/* Table styling */
+.table-hover tbody tr:hover {
+    background-color: #f0f8ff;
+    cursor: pointer;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9fcff;
+}
+
+/* Delete button styling */
+.btn-outline-danger {
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 0.9rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-danger:hover {
+    transform: scale(1.1);
+}
+
+/* Cards */
+.card {
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+}
+
+/* Search input */
+#searchInput {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+}
+
+/* Buttons */
+.btn-primary {
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    transform: translateY(-1px);
+}
+
+.btn-success:hover {
+    background-color: #198754;
+    transform: translateY(-1px);
+}
+
+/* Footer */
+p.text-muted {
+    opacity: 0.85;
+}
+
+/* Fade-in animation for cards */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
